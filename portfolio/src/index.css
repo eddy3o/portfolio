@@ -1,0 +1,26 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #18181B;
+    overflow: hidden;
+    margin: 0;
+}
+  
+.sombreador {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #9b27b03f; /* Fondo completamente transparente */
+    pointer-events: none;
+    box-shadow: 0 0 30px rgba(252, 209, 209, 0.2), 0 0 60px rgba(255, 255, 255, 0.1), 0 0 90px rgba(230, 163, 163, 0.05);
+    filter: blur(35px);
+    z-index: -1;
+  }

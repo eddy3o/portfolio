@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+.container{
+    width: 50%;
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 50px;
+}
+
+.navbar{
+    padding: 2rem 1rem;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    margin: auto;
+    align-items: center;
+}
+
+.navbar li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: auto;
+    height: auto;
+}
+
+.navbar a{
+    padding-bottom: 0.75rem;
+    color: #cccccc72;
+    text-decoration: none;  
+}
+
+.navbar a:hover {
+    background: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: color 0.5s ease;/* Transición al hacer hover */
+}
+
+.content{
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #f2f2f2;
+}
+
+.content h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #cccccc;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2.5rem;
+    /*gruesa*/
+    font-weight: 700;
+}
+
+.content .text{
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #cccccc;
+}
+
+.content .color {
+    background: linear-gradient(to right, #00aaff, #9c27b0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.content .btn{
+    padding: 10px 20px;
+    background: linear-gradient(to right, #00aaff, #9c27b0);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #f2f2f2;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
