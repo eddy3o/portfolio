@@ -55,4 +55,8 @@ body {
   .sombreador {
     display: none;
   }
+  .box{
+    height: 80%;
+    width: 90%;
+  }
 }
