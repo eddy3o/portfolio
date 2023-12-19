@@ -180,6 +180,85 @@
     transition: all 0.3s ease;
 }
 
+.download-btn:hover {
+    background: #9c27b0;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+        max-width: 40rem;
+        margin: 0 auto; 
+        height: 90vh;
+        filter: blur(0);
+        transition: filter 0.5s ease;
+        overflow: hidden;
+    }
+    .download-btn {
+        display: none;
+    }
+    .banner .cat {
+        display: none;
+    }
+    .banner .computer {
+        width: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contactContainer {
+        padding: 1rem;
+    }
+    .contactContainer li {
+        width: 100px;
+        height: 30px;
+    }
+    .contactContainer span {
+        display: none;
+    }
+    .content h1 {
+        font-size: 2rem;
+    }
+    .content h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .banner {
+        height: 30vh;
+        transform: scale(0.8);
+    }
+    .banner .computer {
+        width: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-height: 650px) {
+    .banner {
+        height: 30vh;
+    }
+    .banner .computer {
+        width: 14rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .banner {
+        height: 40vh;
+    }
+    .banner .computer {
+        width: 13rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .container {
         width: 100%;
@@ -219,8 +298,44 @@
     }
 }
 
-.download-btn:hover {
-    background: #9c27b0;
-    transition: all 0.3s ease;
-    transform: scale(1.1);
+
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 100%;
+        max-width: 40rem;
+        margin: 0 auto; 
+        height: 90vh;
+        filter: blur(0);
+        transition: filter 0.5s ease;
+        overflow: hidden;
+    }
+    .download-btn {
+        display: none;
+    }
+    .banner .cat {
+        display: none;
+    }
+    .banner .computer {
+        width: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contactContainer {
+        padding: 1rem;
+    }
+    .contactContainer li {
+        width: 100px;
+        height: 30px;
+    }
+    .contactContainer span {
+        display: none;
+    }
+    .content h1 {
+        font-size: 2rem;
+    }
+    .content h2 {
+        font-size: 1.2rem;
+    }
 }
+
