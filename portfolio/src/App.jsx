@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import './App.css'
 import { Content } from './components/Content.jsx'
-import { ContactButton } from './components/ContactButton.jsx'
 import { NeonBox } from './components/NeonBox.jsx'
 import { useEffect, useRef, useState } from 'react'
 
@@ -44,7 +43,6 @@ export function App () {
                 <NeonBox />
                 <div className={`container ${isBlurred ? 'blurred' : ''}`} ref={containerRef}>
                     <Content  />
-                    <ContactButton />
                 </div>
             </section>
             <script src="script.js"></script>

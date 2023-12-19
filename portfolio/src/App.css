@@ -1,14 +1,13 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 .container {
     width: 100%;
     max-width: 40rem;
-    margin: 0 auto; /* Centrar horizontalmente */
+    margin: 0 auto; 
     height: 90vh;
-    padding: 0 20px;
     filter: blur(0);
     transition: filter 0.5s ease;
+    overflow: hidden;
   }
   
   .blurred {
@@ -52,28 +51,30 @@
 }
 
 .content{
+    width: 100%;
+    max-width: 40rem;
     display: flex;
     justify-content: space-between; 
     align-items: center;
     flex-direction: column;
     text-align: center;
+    height: 90vh;
+    max-height: 90vh;
 }
 
 .content h1{
+    margin-top: 2rem;
     font-size: 3rem;
-    margin-bottom: 1rem;
     font-weight: 500;
     color: #f2f2f2;
 }
 
 .content h2{
     font-size: 1.5rem;
-    margin-bottom: 1rem;
     font-weight: 500;
     color: #f2f2f2;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 1rem;
 }
 
 .content .color {
@@ -81,38 +82,145 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-size: 5rem;
+    font-weight: 700;
 }
 
 .contactContainer {
-    
     display: flex;
     justify-content: space-between;
-    margin: auto;
     align-items: center;
+    width: 100%;
+    padding: 2rem;
 }
 
-.contactContainer li{
-    list-style: none;
+.contactContainer svg {
+    background-color: #f2f2f2;
+    border-radius: 60%;
+    width: 28px;
+    height: 28px;
+    padding: 1px;
+}
+
+.contactContainer li {
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
-    background-color: white;
+    color: white;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    width: 125px;
-    height: 30px;
+    width: 130px;
+    height: 40px;
 }
 
-.contactContainer a{
+.contactContainer a {
     text-decoration: none;
 }
 
-.contactContainer span{
-    color: black;
-    margin-left: 10px; 
+.contactContainer span {
+    color: white;
+    margin-left: 4px;
 }
 
 .contactContainer li:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #9c27b0, #00aaff);
+    color: white;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: visible; 
+    display: flex;
+    align-items: center;
+}
+
+.banner .computer {
+    width: 20rem;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    transform: scaleX(-1);
+    margin-left: 1rem;
+    margin-right: auto;
+    pointer-events: none;
+}
+
+.banner .cat {
+    width: 12rem;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    margin-right: 2.1rem;
+    margin-bottom: 7rem; 
+    z-index: 1; 
+    pointer-events: none;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    background: linear-gradient(to right, #9c27b0, #00aaff);;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 2rem;
+    transition: background-color 0.3s ease;
+    position: relative; 
+    margin-top: 2rem;
+    margin-right: 2.3rem;
+    z-index: 0; 
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        max-width: 40rem;
+        margin: 0 auto; 
+        height: 90vh;
+        filter: blur(0);
+        transition: filter 0.5s ease;
+        overflow: hidden;
+    }
+    .download-btn {
+        display: none;
+    }
+    .banner .cat {
+        display: none;
+    }
+    .banner .computer {
+        width: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contactContainer {
+        padding: 1rem;
+    }
+    .contactContainer li {
+        width: 100px;
+        height: 30px;
+    }
+    .contactContainer span {
+        display: none;
+    }
+    .content h1 {
+        font-size: 2rem;
+    }
+    .content h2 {
+        font-size: 1.2rem;
+    }
+}
+
+.download-btn:hover {
+    background: #9c27b0;
+    transition: all 0.3s ease;
     transform: scale(1.1);
 }

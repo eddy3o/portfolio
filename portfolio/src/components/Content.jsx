@@ -1,5 +1,8 @@
 import { useRef, useEffect, useState, useLayoutEffect } from 'react';
 
+import { ContactButton } from './ContactButton.jsx';
+import { Banner } from './Banner.jsx';
+
 export function Content() {
 
   const colorTextRef = useRef(null);
@@ -29,7 +32,7 @@ export function Content() {
   useLayoutEffect(() => {
     const intervalId = setInterval(() => {
       setEmpty(prevEmpty => !prevEmpty);
-    }, 700);
+    }, 1000);
     return () => clearInterval(intervalId); // Limpieza del intervalo en la desmontada del componente
   }, []);
 
@@ -43,14 +46,16 @@ export function Content() {
 
   return (
     <section className="content">
-        <h1>Hi, my name is 
+        <h1>Hi, I'm
           <br />
           <span className="color" ref={colorTextRef}>{text}</span>
           <span className="color" ref={stickRef}>{stick}</span>  
         </h1>
         <h2>
-          Front-End Developer
+          Student Passionate About FullStack Web Development.
         </h2>
+        <Banner />
+        <ContactButton />
     </section>
   )
 }
