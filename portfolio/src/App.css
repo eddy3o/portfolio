@@ -3,18 +3,16 @@
 
 .container {
     width: 100%;
-    max-width: 48rem;
+    max-width: 40rem;
+    margin: 0 auto; /* Centrar horizontalmente */
     height: 90vh;
     padding: 0 20px;
     filter: blur(0);
     transition: filter 0.5s ease;
-    border-radius: 10px;
-    background: #000;
-    box-sizing: border-box;
   }
   
   .blurred {
-    filter: blur(30px);
+    filter: blur(35px);
   }
 
 .navbar{

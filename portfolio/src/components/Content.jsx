@@ -42,19 +42,16 @@ export function Content() {
   }, [empty]);
 
   return (
-    <div className="content">
+    <section className="content">
         <h1>Hi, my name is 
           <br />
           <span className="color" ref={colorTextRef}>{text}</span>
           <span className="color" ref={stickRef}>{stick}</span>  
         </h1>
         <h2>
-            FrontEnd Developer
+          Front-End Developer
         </h2>
-        <div>
-        </div>
-        
-    </div>
+    </section>
   )
 }
 
