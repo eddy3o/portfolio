@@ -1,20 +1,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
-
-.container{
-    width: 50%;
-    max-width: 1300px;
-    margin: auto;
-    padding: 0 50px;
-}
+.container {
+    width: 100%;
+    max-width: 48rem;
+    height: 90vh;
+    padding: 0 20px;
+    filter: blur(0);
+    transition: filter 0.5s ease;
+    border-radius: 10px;
+    background: #000;
+    box-sizing: border-box;
+  }
+  
+  .blurred {
+    filter: blur(30px);
+  }
 
 .navbar{
     padding: 2rem 1rem;
     top: 0;
     display: flex;
     justify-content: space-between;
-    z-index: 1000;
     margin: auto;
     align-items: center;
 }
@@ -34,20 +41,21 @@
     padding-bottom: 0.75rem;
     color: #cccccc72;
     text-decoration: none;  
+    transition: all 0.3s ease;
 }
 
 .navbar a:hover {
-    background: white;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    transition: color 0.5s ease;/* Transición al hacer hover */
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.navbar li:hover {
+    transform: scale(1.1);
 }
 
 .content{
-    padding: 2rem 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     flex-direction: column;
     text-align: center;
@@ -64,19 +72,10 @@
     font-size: 1.5rem;
     margin-bottom: 1rem;
     font-weight: 500;
-    color: #cccccc;
+    color: #f2f2f2;
     font-family: 'Shadows Into Light', cursive;
     font-size: 2.5rem;
-    /*gruesa*/
     font-weight: 700;
-}
-
-.content .text{
-    font-weight: 500;
-    letter-spacing: 0.4px;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: #cccccc;
 }
 
 .content .color {
@@ -86,15 +85,36 @@
     color: transparent;
 }
 
-.content .btn{
-    padding: 10px 20px;
-    background: linear-gradient(to right, #00aaff, #9c27b0);
-    border: none;
-    outline: none;
-    border-radius: 5px;
+.contactContainer {
+    
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.contactContainer li{
+    list-style: none;
+    border-radius: 10px;
     cursor: pointer;
-    color: #f2f2f2;
-    font-weight: 500;
-    font-size: 1rem;
     transition: all 0.3s ease;
+    background-color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 125px;
+    height: 30px;
+}
+
+.contactContainer a{
+    text-decoration: none;
+}
+
+.contactContainer span{
+    color: black;
+    margin-left: 10px; 
+}
+
+.contactContainer li:hover {
+    transform: scale(1.1);
 }
