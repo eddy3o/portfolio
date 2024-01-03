@@ -122,6 +122,7 @@
 
 .contactContainer span {
     color: white;
+    margin-left: 0.3rem;
 }
 
 .contactContainer li:hover {

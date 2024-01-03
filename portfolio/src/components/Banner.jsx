@@ -8,7 +8,7 @@ export function Banner() {
     <section className='banner'>
         <img className='computer' src={computer} alt="" />
         <img className='cat' src={cat} alt="" />
-        <a href="" download className="download-btn">Download CV</a>
+        <a href="https://drive.google.com/uc?export=download&id=1meenbYYo_lFYy9Coo52e5y6nPxvDU4So" download className="download-btn">Download CV</a>
     </section>
   )
 }
