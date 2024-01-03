@@ -89,17 +89,9 @@
 .contactContainer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;  /* Alinea verticalmente el contenido al centro */
     width: 100%;
     padding: 2rem;
-}
-
-.contactContainer svg {
-    background-color: #f2f2f2;
-    border-radius: 60%;
-    width: 28px;
-    height: 28px;
-    padding: 1px;
 }
 
 .contactContainer li {
@@ -115,18 +107,29 @@
 }
 
 .contactContainer a {
+    display: flex;
+    align-items: center;  /* Alinea verticalmente los elementos dentro del enlace */
     text-decoration: none;
+}
+
+.contactContainer svg {
+    background-color: #f2f2f2;
+    border-radius: 60%;
+    width: 28px;
+    height: 28px;
+    padding: 1px;
 }
 
 .contactContainer span {
     color: white;
-    margin-left: 4px;
 }
 
 .contactContainer li:hover {
     transform: scale(1.1);
+    transform-origin: bottom;  /* Ajusta el punto de origen de la transformación */
     background: linear-gradient(to right, #9c27b0, #00aaff);
     color: white;
+    transition: all 0.3s ease;
 }
 
 .banner {
