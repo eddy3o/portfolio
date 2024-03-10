@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Shadows+Into+Light&display=swap');
+
+body {
+  --black: #000000;
+  --ash-black: #222;
+  --white: #fafafa;
+  --sky: #00ccff;
+  --green: #22dddd;
+  --blue: #1300ff;
+  --dusk: #6600ff;
+  --purple: #9900ff;
+  --pink: #ff0066;
+  --red: #fe0222;
+  --orange: #fd7702;
+  --yellow: #ffbb00;
+
+  --background: var(--white);
+  --accent: var(--blue);
+
+  margin: 0;
+  padding: 0;
+  background-color: var(--black);
+  color: var(--accent);
+  overflow: hidden;
+  font-family: 'Pixelify Sans', sans-serif;
+  /* no select text */
+  user-select: none;
+}   
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Estilo adicional para navegadores específicos */
+::-webkit-scrollbar {
+  width: 0; /* Para Safari y Chrome */
+}
+
+/* Para Firefox */
+html {
+  scrollbar-width: none;
+}
