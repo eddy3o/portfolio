@@ -7,7 +7,7 @@ import Cat from "../assets/bongo-cat.gif"
 
 const Content = () => {
     const handleDownload = () => {
-        window.location.href = 'https://drive.google.com/uc?export=download&id=1meenbYYo_lFYy9Coo52e5y6nPxvDU4So';
+        window.location.href = 'https://drive.google.com/uc?export=download&id=1JyIkLE83heW12NIHdg_ucjWJkYJIyFgn';
       };
     
 
